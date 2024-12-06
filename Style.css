@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600;700;800;900 & display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(75, 218, 168, 0.9);
+}
+
+.container{
+    width: 80%;
+    height: 80vh;
+    display:flex;
+    box-shadow: 15px 10px 15px rgba(0,0,0,.212);
+}
+.Form-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #97F7A6;
+    padding: 1rem;
+}
+.Form-img img{
+    width: 90%;
+}
+
+.Form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 3rem;
+}
+.Form-header{
+    Margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Idioma-button{
+    display: flex;
+    align-items: center;
+}
+
+.Idioma-button button{
+    border: none;
+    background-color: rgb(89, 179, 121);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Idioma-button button:hover{
+    background-color:rgb(66, 209, 85); 
+}
+.Idioma-button button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.Form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #C2EFA6;
+    border-radius: 10px;
+    margin: 0 auto;
+    position:absolute;
+}
+
+.Input-Group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.Inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.Inputbox input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+.Inputbox input:hover{
+    background-color: #eeeeee85;
+}
+.Inputbox input:focus-visible{
+    outline: 1px solid rgb(66, 209, 85);
+}
+
+.Inputbox label,
+.experience-title h6{
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+.Inputbox input::placeholder{
+    color: #000000be;
+}
+.isa{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+.isa label{
+    transform: translateY(9Px);
+    font-size: 0.87rem;
+}
+.texta{
+    margin: 0.6rem 0;
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+.texta:hover{
+    background-color: #eeeeee85;
+}
+.texta:focus-visible{
+    outline: 1px solid rgb(66, 209, 85);
+}
+.experience-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 0.5rem;
+}
+.experience-input{
+    display: flex;
+    align-items: center;
+}
+.experience-input input{
+    margin-right: 0.35rem;
+}
+.experience-input label{
+    font-size: 0.80rem;
+    font-weight: 550;
+    color: #000000c0;
+}
+
+.but{
+    display: flex;
+    margin-right: 10px;
+    gap: 25px;
+}
+.but button{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #aaf797;
+    padding: 0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.but button a{
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: rgb(54, 45, 17);
+    font-weight: 530;
+}
+.Back:hover{
+    background-color: rgb(218, 227, 57);
+}
+.Send:hover{
+    background-color:#b8efdd;
+}
+
+@media screen and (max-width: 1330px){
+    .Form-img{
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .Form{
+        width: 100%;
+    }
+    .but{
+        margin-top: auto;
+    }
+}
+@media screen and (max-width: 1064px){
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .Input-Group{
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+    .experience-input{
+        margin-top: 2rem;
+    }
+    .experience-group{
+        flex-direction: column;
+    }
+    .experience-input{
+        margin-top: 0.5rem;
+    }
+}
