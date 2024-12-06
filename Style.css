@@ -41,7 +41,7 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: #fff;
-    padding: 3rem;
+    padding: 2rem;
 }
 .Form-header{
     Margin-bottom: 3rem;
@@ -91,11 +91,11 @@ body{
 .Inputbox{
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1rem;
 }
 .Inputbox input{
     margin: 0.6rem 0;
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 1rem;
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000001c;
@@ -109,7 +109,7 @@ body{
 
 .Inputbox label,
 .experience-title h6{
-    font-size: 0.75rem;
+    font-size: 0.70rem;
     font-weight: 600;
     color: #000000c0;
 }
